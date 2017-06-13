@@ -19,6 +19,14 @@
     }
   })
 
+  stopButton.addEventListener('mouseenter', function(){
+    console.log('Entered ' + stopButton.textContent + ' button.')
+  })
+
+  stopButton.addEventListener('mouseleave', function(){
+    console.log('Left ' + stopButton.textContent + ' button.')
+  })
+
   slowButton.addEventListener('click', function(){
     if (slowLight.classList.contains('slow')) {
       slowLight.classList.remove('slow')
@@ -27,11 +35,27 @@
     }
   })
 
+  slowButton.addEventListener('mouseenter', function(){
+    console.log('Entered ' + slowButton.textContent + ' button.')
+  })
+
+  slowButton.addEventListener('mouseleave', function(){
+    console.log('Left ' + slowButton.textContent + ' button.')
+  })
+
   goButton.addEventListener('click', function(){
     if (goLight.classList.contains('go')) {
       goLight.classList.remove('go')
     } else {
       goLight.classList.add('go')
     }
+  })
+
+  goButton.addEventListener('mouseenter', function(){
+    console.log('Entered ' + goButton.textContent + ' button.')
+  })
+
+  goButton.addEventListener('mouseleave', function(){
+    console.log('Left ' + goButton.textContent + ' button.')
   })
 })();
